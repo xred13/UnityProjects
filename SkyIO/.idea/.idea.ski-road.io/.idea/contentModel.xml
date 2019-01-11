@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\kimirti\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\kimirti\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_ski-road.io.-1335691778.00" t="ExcludeRecursive" />
+    <e p="D:\Project\Unity\ski-road.io" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AiInput.cs" t="Include" />
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="EZ Camera Shake" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Sample Scripts" t="Include">
+              <e p="ShakeByDistance.cs" t="Include" />
+              <e p="ShakeOnKeyPress.cs" t="Include" />
+              <e p="ShakeOnTrigger.cs" t="Include" />
+            </e>
+            <e p="ShakeDemo.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="CameraShakeInstance.cs" t="Include" />
+            <e p="CameraShakePresets.cs" t="Include" />
+            <e p="CameraShaker.cs" t="Include" />
+            <e p="Utilities" t="Include">
+              <e p="CameraUtilities.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="EZ Pooling" t="Include">
+          <e p="Editor" t="Include">
+            <e p="EZ_EditorAssets.cs" t="Include" />
+            <e p="EZ_PoolManager_Insp.cs" t="Include" />
+          </e>
+          <e p="Examples" t="Include">
+            <e p="-Scripts" t="Include">
+              <e p="basic_object.cs" t="Include" />
+              <e p="DestroyerBoundary.cs" t="Include" />
+            </e>
+            <e p="Example recycle instances" t="Include">
+              <e p="test_recycleInstances.cs" t="Include" />
+            </e>
+            <e p="Example sandbox" t="Include">
+              <e p="ObjBehaviour.cs" t="Include" />
+              <e p="test_sandbox.cs" t="Include" />
+            </e>
+            <e p="Example smart despawn cull" t="Include">
+              <e p="test_smartDespawnCull.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="EZ_PoolManager.cs" t="Include" />
+            <e p="EZ_PrefabPool.cs" t="Include" />
+            <e p="EZ_PrefabPoolOption.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Mini Profiler" t="Include">
+          <e p="CHANGELOG.txt" t="Include" />
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BallController.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="MeshGenerator.cs" t="Include" />
+          <e p="ObstacleController.cs" t="Include" />
+          <e p="ObstacleSpawner.cs" t="Include" />
+          <e p="PlayerInput.cs" t="Include" />
+          <e p="RoadGenerator.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ski-road.io.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

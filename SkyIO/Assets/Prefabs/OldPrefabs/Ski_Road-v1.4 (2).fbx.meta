@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 1f690ba8e759b384d9553e34581dba03
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 3dmSnow
+    100002: 3dmSnow.000
+    100004: 3dmSnow.001
+    100006: 3dmSnow.002
+    100008: 3dmSnow.003
+    100010: 3dmSnow.004
+    100012: 3dmSnow.005
+    100014: 3dmSnow.006
+    100016: Camera
+    100018: Cube
+    100020: Cube.001
+    100022: Cube.002
+    100024: Cube.003
+    100026: Cube.004
+    100028: Cube.005
+    100030: Cube.006
+    100032: Cube.007
+    100034: Cube.008
+    100036: Cube.009
+    100038: Cube.023_Cube.044
+    100040: Plane
+    100042: Plane.002
+    100044: Plane.003
+    100046: //RootNode
+    100048: SM_Prop_Fence_01
+    100050: SM_Prop_Fence_04
+    100052: Sphere
+    100054: Sphere.001
+    100056: Sphere.002
+    100058: Sphere.003
+    100060: Sphere.004
+    100062: Sphere.005
+    100064: Sphere.006
+    100066: Text
+    100068: Text.001
+    100070: Text.002
+    100072: Tree_Fir_1
+    100074: Tree_Fir_1.001
+    100076: Tree_Fir_1.002
+    100078: Tree_Fir_7
+    100080: Tree_Pine_1
+    400000: 3dmSnow
+    400002: 3dmSnow.000
+    400004: 3dmSnow.001
+    400006: 3dmSnow.002
+    400008: 3dmSnow.003
+    400010: 3dmSnow.004
+    400012: 3dmSnow.005
+    400014: 3dmSnow.006
+    400016: Camera
+    400018: Cube
+    400020: Cube.001
+    400022: Cube.002
+    400024: Cube.003
+    400026: Cube.004
+    400028: Cube.005
+    400030: Cube.006
+    400032: Cube.007
+    400034: Cube.008
+    400036: Cube.009
+    400038: Cube.023_Cube.044
+    400040: Plane
+    400042: Plane.002
+    400044: Plane.003
+    400046: //RootNode
+    400048: SM_Prop_Fence_01
+    400050: SM_Prop_Fence_04
+    400052: Sphere
+    400054: Sphere.001
+    400056: Sphere.002
+    400058: Sphere.003
+    400060: Sphere.004
+    400062: Sphere.005
+    400064: Sphere.006
+    400066: Text
+    400068: Text.001
+    400070: Text.002
+    400072: Tree_Fir_1
+    400074: Tree_Fir_1.001
+    400076: Tree_Fir_1.002
+    400078: Tree_Fir_7
+    400080: Tree_Pine_1
+    2000000: Camera
+    2100000: Yellow lamp
+    2100002: Material.003
+    2100004: Green Lamp
+    2100006: Material
+    2100008: Starting line
+    2100010: Ball lt blue
+    2100012: Ball Purple
+    2100014: Ball Blue
+    2100016: Ball Green.001
+    2100018: Ball Red
+    2100020: Ball Yellow
+    2100022: 3dmSnow.009
+    2100024: 3dmSnow.005
+    2100026: Tree_Fir_Foliage.002
+    2100028: Tree_Fir_Wood.002
+    2100030: No Name
+    2100032: Tree_Pine_Wood
+    2100034: Tree_Pine_Foliage
+    2100036: 3dmSnow.004
+    2100038: Material.004
+    2100040: 3dmSnow.001
+    2100042: Material.008
+    2100044: m_ornaments
+    2100046: Material.009
+    2100048: Material.006
+    2100050: Material.002
+    2100052: 3dmSnow.002
+    2100054: Tree_Fir_Wood
+    2100056: Tree_Fir_Foliage
+    2100058: Material.005
+    2100060: 3dmSnow
+    2100062: Stripes
+    2100064: Material.000
+    2300000: 3dmSnow
+    2300002: 3dmSnow.000
+    2300004: 3dmSnow.001
+    2300006: 3dmSnow.002
+    2300008: 3dmSnow.003
+    2300010: 3dmSnow.004
+    2300012: 3dmSnow.005
+    2300014: 3dmSnow.006
+    2300016: Cube
+    2300018: Cube.001
+    2300020: Cube.002
+    2300022: Cube.003
+    2300024: Cube.004
+    2300026: Cube.005
+    2300028: Cube.006
+    2300030: Cube.007
+    2300032: Cube.008
+    2300034: Cube.009
+    2300036: Cube.023_Cube.044
+    2300038: Plane
+    2300040: Plane.002
+    2300042: Plane.003
+    2300044: SM_Prop_Fence_01
+    2300046: SM_Prop_Fence_04
+    2300048: Sphere
+    2300050: Sphere.001
+    2300052: Sphere.002
+    2300054: Sphere.003
+    2300056: Sphere.004
+    2300058: Sphere.005
+    2300060: Sphere.006
+    2300062: Text
+    2300064: Text.001
+    2300066: Text.002
+    2300068: Tree_Fir_1
+    2300070: Tree_Fir_1.001
+    2300072: Tree_Fir_1.002
+    2300074: Tree_Fir_7
+    2300076: Tree_Pine_1
+    3300000: 3dmSnow
+    3300002: 3dmSnow.000
+    3300004: 3dmSnow.001
+    3300006: 3dmSnow.002
+    3300008: 3dmSnow.003
+    3300010: 3dmSnow.004
+    3300012: 3dmSnow.005
+    3300014: 3dmSnow.006
+    3300016: Cube
+    3300018: Cube.001
+    3300020: Cube.002
+    3300022: Cube.003
+    3300024: Cube.004
+    3300026: Cube.005
+    3300028: Cube.006
+    3300030: Cube.007
+    3300032: Cube.008
+    3300034: Cube.009
+    3300036: Cube.023_Cube.044
+    3300038: Plane
+    3300040: Plane.002
+    3300042: Plane.003
+    3300044: SM_Prop_Fence_01
+    3300046: SM_Prop_Fence_04
+    3300048: Sphere
+    3300050: Sphere.001
+    3300052: Sphere.002
+    3300054: Sphere.003
+    3300056: Sphere.004
+    3300058: Sphere.005
+    3300060: Sphere.006
+    3300062: Text
+    3300064: Text.001
+    3300066: Text.002
+    3300068: Tree_Fir_1
+    3300070: Tree_Fir_1.001
+    3300072: Tree_Fir_1.002
+    3300074: Tree_Fir_7
+    3300076: Tree_Pine_1
+    4300000: Cube.009
+    4300002: Cube.008
+    4300004: Cube.007
+    4300006: Cube.006
+    4300008: Cube.005
+    4300010: Cube.004
+    4300012: Text.002
+    4300014: Plane
+    4300016: Sphere.006
+    4300018: Sphere.005
+    4300020: Sphere.004
+    4300022: Sphere.003
+    4300024: Sphere.002
+    4300026: Sphere.001
+    4300028: Cube.003
+    4300030: 3dmSnow.006
+    4300032: Tree_Fir_7
+    4300034: 3dmSnow.005
+    4300036: Tree_Pine_1
+    4300038: 3dmSnow.002
+    4300040: SM_Prop_Fence_04
+    4300042: 3dmSnow
+    4300044: SM_Prop_Fence_01
+    4300046: Cube.002
+    4300048: Cube.001
+    4300050: Cube
+    4300052: Plane.002
+    4300054: Plane.003
+    4300056: 3dmSnow.000
+    4300058: Tree_Fir_1.002
+    4300060: Text
+    4300062: 3dmSnow.004
+    4300064: Cube.023_Cube.044
+    4300066: Tree_Fir_1.001
+    4300068: 3dmSnow.003
+    4300070: 3dmSnow.001
+    4300072: Tree_Fir_1
+    4300074: Sphere
+    4300076: Text.001
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
