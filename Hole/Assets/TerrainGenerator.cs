@@ -100,10 +100,6 @@ public class TerrainGenerator : MonoBehaviour
         {
             vertices[i] = widthPoints[i/2, 0];
             vertices[i + 1] = widthPoints[i/2, 1];
-
-            Debug.Log(i);
-            Debug.Log(vertices[i]);
-            Debug.Log(vertices[i + 1]);
         }
     }
 
