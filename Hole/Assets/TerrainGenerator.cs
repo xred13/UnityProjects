@@ -32,7 +32,7 @@ public class TerrainGenerator : MonoBehaviour
     float randomPerlinNoiseStart;
 
     Vector3[] centerPoints = new Vector3[0];
-    float[,] widthPoints;
+    Vector3[,] widthPoints;
 
     Vector3[] vertices;
     int[] triangles;
@@ -98,17 +98,31 @@ public class TerrainGenerator : MonoBehaviour
 
         for(int i = 0; i < vertices.Length; i += 2)
         {
-            vertices[i] = new Vector3( widthPoints[i/2, 0], 0, centerPoints[i/2].z);
-            vertices[i + 1] = new Vector3( widthPoints[i/2, 1], 0, centerPoints[i/2].z);
+            vertices[i] = widthPoints[i/2, 0];
+            vertices[i + 1] = widthPoints[i/2, 1];
+
+            Debug.Log(i);
+            Debug.Log(vertices[i]);
+            Debug.Log(vertices[i + 1]);
         }
     }
 
     void GenerateWidthPoints() // for each index of the centerpoints array, we have an array with 2 values, one for the left side width x position, the other for the right side
     {
-        widthPoints = new float[centerPoints.Length,2];
+        widthPoints = new Vector3[centerPoints.Length,2];
 
         float halfWidth = width / 2;
-        for(int i = 0; i < widthPoints.GetLength(0); i++)
+
+        // setting the first point's width values
+        Vector3 direction;
+        Vector3 perpendicular;
+
+        widthPoints[0, 0] = centerPoints[0] - halfWidth * Vector3.right;
+        widthPoints[0, 1] = centerPoints[0] + halfWidth * Vector3.right;
+
+
+        // setting the rest except the last
+        for (int i = 1; i < widthPoints.GetLength(0) - 1; i++)
         {
             if(centerPoints[i].z + (tightWidthPointsHalfLength*2 + tightWidthPointsMaintain)*distanceEachZPos <= endZPos && Random.Range(0, centerPoints.Length) < tightWidthChance) // if there's space left for tightening the terrain and there's chance
             {
@@ -121,8 +135,13 @@ public class TerrainGenerator : MonoBehaviour
 
                 for (int k = 0; k < tightWidthPointsHalfLength; k++) // decrease width
                 {
-                    widthPoints[i + k, 0] = centerPoints[i + k].x - currentHalfWidth + difference;
-                    widthPoints[i + k, 1] = centerPoints[i + k].x + currentHalfWidth - difference;
+                    direction = centerPoints[i + k + 1] - centerPoints[i + k - 1];
+                    perpendicular = new Vector3(direction.z, direction.y, -direction.x).normalized;
+
+                    float distance = currentHalfWidth - difference;
+
+                    widthPoints[i + k, 0] = centerPoints[i + k] - distance * perpendicular;
+                    widthPoints[i + k, 1] = centerPoints[i + k] + distance * perpendicular;
 
                     currentHalfWidth -= difference;
 
@@ -132,8 +151,11 @@ public class TerrainGenerator : MonoBehaviour
                 int reference = cont;
                 for (int k = reference; k < reference + tightWidthPointsMaintain; k++) // maintain smallest width
                 {
-                    widthPoints[i + k, 0] = centerPoints[i + k].x - currentHalfWidth;
-                    widthPoints[i + k, 1] = centerPoints[i + k].x + currentHalfWidth;
+                    direction = centerPoints[i + k + 1] - centerPoints[i + k - 1];
+                    perpendicular = new Vector3(direction.z, direction.y, -direction.x).normalized;
+
+                    widthPoints[i + k, 0] = centerPoints[i + k] - currentHalfWidth * perpendicular;
+                    widthPoints[i + k, 1] = centerPoints[i + k] + currentHalfWidth * perpendicular;
 
                     cont++;
                 }
@@ -141,8 +163,13 @@ public class TerrainGenerator : MonoBehaviour
                 reference = cont;
                 for (int k = reference; k < reference + tightWidthPointsHalfLength; k++) // increase width to normal
                 {
-                    widthPoints[i + k, 0] = centerPoints[i + k].x - currentHalfWidth - difference;
-                    widthPoints[i + k, 1] = centerPoints[i + k].x + currentHalfWidth + difference;
+                    direction = centerPoints[i + k + 1] - centerPoints[i + k - 1];
+                    perpendicular = new Vector3(direction.z, direction.y, -direction.x).normalized;
+
+                    float distance = currentHalfWidth - difference;
+
+                    widthPoints[i + k, 0] = centerPoints[i + k] - distance * perpendicular;
+                    widthPoints[i + k, 1] = centerPoints[i + k] + distance * perpendicular;
 
                     currentHalfWidth += difference;
 
@@ -154,11 +181,16 @@ public class TerrainGenerator : MonoBehaviour
             }
             else // we go with normal terrain
             {
-                widthPoints[i, 0] = centerPoints[i].x - halfWidth;
-                widthPoints[i, 1] = centerPoints[i].x + halfWidth;
-            }
+                direction = centerPoints[i + 1] - centerPoints[i - 1];
+                perpendicular = new Vector3(direction.z, direction.y, -direction.x).normalized;
 
+                widthPoints[i, 0] = centerPoints[i] - halfWidth * perpendicular;
+                widthPoints[i, 1] = centerPoints[i] + halfWidth * perpendicular;
+            }
         }
+
+        widthPoints[centerPoints.Length-1, 0] = centerPoints[centerPoints.Length-1] - halfWidth * Vector3.right;
+        widthPoints[centerPoints.Length-1, 1] = centerPoints[centerPoints.Length-1] + halfWidth * Vector3.right;
     }
 
     // generate center points of the terrain path (returns a float array)
