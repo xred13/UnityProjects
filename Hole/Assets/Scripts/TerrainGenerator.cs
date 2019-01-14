@@ -31,30 +31,34 @@ public class TerrainGenerator : MonoBehaviour
 
     float randomPerlinNoiseStart;
 
-    Vector3[] centerPoints = new Vector3[0];
+    [HideInInspector]
+    public Vector3[] centerPoints = new Vector3[0];
     Vector3[,] widthPoints;
 
     Vector3[] vertices;
     int[] triangles;
 
-    // Start is called before the first frame update
-    void Start()
+    public static TerrainGenerator instance = null;
+
+    private void Awake()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         randomPerlinNoiseStart = Random.Range(0, 500);
 
         GenerateCenterPoints();
         GenerateWidthPoints();
 
         GenerateMesh();
-
-
     }
 
-    private void Update()
-    {
-        GenerateCenterPoints();
 
-    }
 
     void GenerateMesh()
     {
@@ -69,6 +73,8 @@ public class TerrainGenerator : MonoBehaviour
 
         terrain.AddComponent<MeshFilter>();
         terrain.GetComponent<MeshFilter>().mesh = mesh;
+
+        terrain.AddComponent<MeshCollider>();
 
     }
 
@@ -210,16 +216,16 @@ public class TerrainGenerator : MonoBehaviour
         return Mathf.PerlinNoise(0, z / perlinLength * perlinScale) / perlinHeight * perlinScale;
     }
 
-    private void OnDrawGizmos()
-    {
-        if(centerPoints.Length == 0)
-        {
-            return;
-        }
-        for(int i = 0; i < centerPoints.Length; i++)
-        {
-            Gizmos.DrawSphere(centerPoints[i], 0.1f);
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if(centerPoints.Length == 0)
+    //    {
+    //        return;
+    //    }
+    //    for(int i = 0; i < centerPoints.Length; i++)
+    //    {
+    //        Gizmos.DrawSphere(centerPoints[i], 0.1f);
+    //    }
+    //}
 
 }
